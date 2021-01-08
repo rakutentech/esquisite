@@ -1,5 +1,13 @@
 # @rakutentech/plantuml-worker ChangeLog
 
+## v1.1.2
+
+_2021-01-08_
+
+### Bugfixes
+
+- fix: fix split2 import (50acbc5)
+
 ## v1.1.1
 
 _2021-01-08_
