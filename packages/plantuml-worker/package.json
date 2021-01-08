@@ -1,0 +1,73 @@
+{
+  "name": "@rakutentech/plantuml-worker",
+  "version": "1.0.0",
+  "publishConfig": {
+    "access": "public",
+    "typings": "types/index.d.ts"
+  },
+  "description": "Quickly generate diagrams with shared PlantUML instances",
+  "license": "MIT",
+  "repository": "rakutentech/esquisite",
+  "author": "Julien Cayzac",
+  "homepage": "https://github.com/rakutentech/esquisite/tree/master/packages/plantuml-worker#readme",
+  "bugs": "https://github.com/rakutentech/esquisite/issues",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "ci:coverage": "nyc pnpm run test && nyc report --reporter=text-lcov > coverage.lcov",
+    "ci:lint": "pnpm run build && pnpm run lint",
+    "ci:lint:commits": "commitlint --from=${CIRCLE_BRANCH} --to=${CIRCLE_SHA1}",
+    "ci:test": "pnpm run test -- --verbose",
+    "lint": "pnpm run lint:js && pnpm run lint:docs && pnpm run lint:package",
+    "lint:docs": "prettier --single-quote --arrow-parens avoid --trailing-comma none --write README.md",
+    "lint:js": "eslint --fix --cache src test --ext .js,.ts",
+    "lint:package": "prettier --write package.json --plugin=prettier-plugin-package",
+    "prebuild": "del-cli dist",
+    "prepare": "pnpm run build",
+    "prepublishOnly": "pnpm run lint",
+    "pretest": "pnpm run build",
+    "test": "env TS_NODE_PROJECT=\"tsconfig.testing.json\" ava"
+  },
+  "files": [
+    "dist",
+    "types",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "diagrams",
+    "module",
+    "modules",
+    "plantuml",
+    "svg",
+    "uml"
+  ],
+  "dependencies": {
+    "split2": "^3.2.2"
+  },
+  "devDependencies": {
+    "@types/split2": "^2.1.6"
+  },
+  "types": "types/index.d.ts",
+  "ava": {
+    "babel": {
+      "compileEnhancements": false
+    },
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "files": [
+      "!**/fixtures/**",
+      "!**/helpers/**",
+      "!**/recipes/**",
+      "!**/types.ts"
+    ]
+  }
+}
