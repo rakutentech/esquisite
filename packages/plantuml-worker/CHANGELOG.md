@@ -1,5 +1,13 @@
 # @rakutentech/plantuml-worker ChangeLog
 
+## v1.1.1
+
+_2021-01-08_
+
+### Bugfixes
+
+- fix: added missing 'vendor' entry to pkg.files (0008c74)
+
 ## v1.1.0
 
 _2021-01-08_
