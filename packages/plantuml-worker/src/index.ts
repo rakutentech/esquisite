@@ -3,11 +3,9 @@ import { Transform, TransformCallback, Writable } from 'stream';
 import { createHash } from 'crypto';
 import * as console from 'console';
 
-import * as split_ from 'split2';
+import split2 from 'split2';
 
 import { Options } from '../types';
-
-const split = split_;
 
 const DEFAULT_OPTIONS: Partial<Options> = {
   env: { PLANTUML_LIMIT_SIZE: 32768 },
@@ -20,7 +18,7 @@ const DEFAULT_OPTIONS: Partial<Options> = {
 const makeDigest = (x: string) => createHash('sha512').update(x, 'utf8').digest('base64');
 
 const DELIMITER = '___PLANTUML_DIAGRAM_DELIMITER___';
-const SPLITTER = split(DELIMITER);
+const SPLITTER = split2(DELIMITER);
 
 const javaArgs = (options: Options) => [
   '-Djava.awt.headless=true',
