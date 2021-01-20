@@ -31,7 +31,7 @@ The plugin automatically loads itself, unless the `data-no-autoload` attribute i
 
 ```text
 If you wrap `code` with square brackets and add a language identifier, e.g.
-[`<link href="foo">` html]`, then the produced markup will enable syntax
+[`<link href="foo">` html], then the produced markup will enable syntax
 highlighting using PrismJS like in code fences.
 ```
 
