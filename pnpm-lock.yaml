@@ -65,6 +65,14 @@ importers:
       typescript: ^3.9.7
       write-pkg: ^4.0.0
       yaml: ^1.10.0
+  packages/docsify-code-inline:
+    dependencies:
+      split2: 3.2.2
+    devDependencies:
+      '@types/split2': 2.1.6
+    specifiers:
+      '@types/split2': ^2.1.6
+      split2: ^3.2.2
   packages/plantuml-worker:
     dependencies:
       split2: 3.2.2
