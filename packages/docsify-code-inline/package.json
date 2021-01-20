@@ -9,7 +9,7 @@
   "license": "MIT",
   "repository": "rakutentech/esquisite",
   "author": "Julien Cayzac",
-  "homepage": "https://github.com/rakutentech/esquisite/tree/master/packages/docsify-code-inline#readme",
+  "homepage": "https://github.com/rakutentech/esquisite/tree/main/packages/docsify-code-inline#readme",
   "bugs": "https://github.com/rakutentech/esquisite/issues",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
