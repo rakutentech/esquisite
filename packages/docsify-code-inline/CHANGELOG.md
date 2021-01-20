@@ -1,5 +1,13 @@
 # @rakutentech/docsify-code-inline ChangeLog
 
+## v1.0.4
+
+_2021-01-20_
+
+### Bugfixes
+
+- fix: prevent prettier from vandalizing the readme (8cff01c)
+
 ## v1.0.3
 
 _2021-01-20_

@@ -1,6 +1,6 @@
 {
   "name": "@rakutentech/docsify-code-inline",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "publishConfig": {
     "access": "public",
     "typings": "types/index.d.ts"
