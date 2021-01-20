@@ -33,7 +33,7 @@ You can also import it as an ES module, if using the `.esm` build:
 <script type="module" src="//unpkg.com/@rakutentech/docsify-code-inline/dist/index.esm.min.js"></script>
 ```
 
-The module also support Node. See the API below.
+The module also supports Node. See the API below.
 
 ```sh
 npm install --save-dev @rakutentech/docsify-code-inline
