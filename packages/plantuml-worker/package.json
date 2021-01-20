@@ -33,6 +33,7 @@
     "test": "env TS_NODE_PROJECT=\"tsconfig.testing.json\" ava"
   },
   "files": [
+    "CHANGELOG.md",
     "dist",
     "types",
     "vendor",
