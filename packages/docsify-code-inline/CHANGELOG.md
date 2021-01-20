@@ -1,5 +1,14 @@
 # @rakutentech/docsify-code-inline ChangeLog
 
+## v1.0.3
+
+_2021-01-20_
+
+### Bugfixes
+
+- fix: grammar error in readme (b8f0b89)
+- fix: package.json homepage was referencing the wrong branch (96ea15a)
+
 ## v1.0.2
 
 _2021-01-20_
