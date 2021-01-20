@@ -16,15 +16,25 @@ A [Docsify][docsify] plugin that enables syntax highlighting for inline code.
 
 The plugin automatically loads itself, unless the `data-no-autoload` attribute is set. It also automatically injects CSS in the DOM, unless the `data-no-css-inject` attribute is set:
 
+<!-- prettier-ignore -->
 ```html
 <!-- autoloads, injects CSS -->
-<script src="//unpkg.com/@rakutentech/docsify-code-inline/dist/index.min.js"></script>
+<script
+  src="//unpkg.com/@rakutentech/docsify-code-inline/dist/index.min.js"
+></script>
 
 <!-- autoloads, doesn't inject CSS -->
-<script src="//unpkg.com/@rakutentech/docsify-code-inline/dist/index.min.js" data-no-css-inject></script>
+<script
+  src="//unpkg.com/@rakutentech/docsify-code-inline/dist/index.min.js"
+  data-no-css-inject
+></script>
 
 <!-- doesn't load, doesn't inject CSS -->
-<script src="//unpkg.com/@rakutentech/docsify-code-inline/dist/index.min.js" data-no-autoload data-no-css-inject></script>
+<script
+  src="//unpkg.com/@rakutentech/docsify-code-inline/dist/index.min.js"
+  data-no-autoload
+  data-no-css-inject
+></script>
 ```
 
 You can also import it as an ES module, if using the `.esm` build:
@@ -49,26 +59,41 @@ highlighting using PrismJS like in code fences.
 
 …produces the following DOM tree when PrismJS is loaded with HTML support:
 
+<!-- prettier-ignore -->
 ```html
 <p>
   If you wrap
-  <code> code </code>
+  <code>
+    code
+  </code>
   with square brackets and add a language identifier, e.g.
   <code class="language-html">
     <span class="token tag">
       <span class="token tag">
-        <span class="token punctuation"> &lt; </span>
+        <span class="token punctuation">
+          &lt;
+        </span>
         link
       </span>
 
-      <span class="token attr-name"> href </span>
-      <span class="token attr-value">
-        <span class="token punctuation attr-equals"> = </span>
-        <span class="token punctuation"> " </span>
-        foo
-        <span class="token punctuation"> " </span>
+      <span class="token attr-name">
+        href
       </span>
-      <span class="token punctuation"> &gt; </span>
+      <span class="token attr-value">
+        <span class="token punctuation attr-equals">
+          =
+        </span>
+        <span class="token punctuation">
+          "
+        </span>
+        foo
+        <span class="token punctuation">
+          "
+        </span>
+      </span>
+      <span class="token punctuation">
+        &gt;
+      </span>
     </span>
   </code>
   , then the produced markup will enable syntax highlighting using PrismJS like in code fences.
