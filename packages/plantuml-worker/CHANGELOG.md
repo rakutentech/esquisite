@@ -1,5 +1,14 @@
 # @rakutentech/plantuml-worker ChangeLog
 
+## v1.1.3
+
+_2021-01-20_
+
+### Bugfixes
+
+- fix: add changelog to published files (a8140b9)
+- fix: package.json homepage was referencing the wrong branch (41ef67f)
+
 ## v1.1.2
 
 _2021-01-08_
