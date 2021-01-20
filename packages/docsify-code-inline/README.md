@@ -57,7 +57,14 @@ If you wrap `code` with square brackets and add a language identifier, e.g.
 highlighting using PrismJS like in code fences.
 ```
 
-…produces the following DOM tree when PrismJS is loaded with HTML support:
+…gets transformed by this plugin into:
+
+```html
+If you wrap `code` with square brackets and add a language identifier, e.g. <code class="language-html">&lt;link href="foo"&gt;</code>, then the produced markup will
+enable syntax highlighting using PrismJS like in code fences.
+```
+
+…which produces the following DOM tree when PrismJS is active and supports HTML:
 
 <!-- prettier-ignore -->
 ```html
