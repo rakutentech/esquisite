@@ -46,6 +46,11 @@
     "highlight",
     "syntax"
   ],
+  "devDependencies": {
+    "@types/stylelint": "^9.10.1",
+    "stylelint": "^13.9.0",
+    "stylelint-config-standard": "^20.0.0"
+  },
   "types": "types/index.d.ts",
   "ava": {
     "babel": {
