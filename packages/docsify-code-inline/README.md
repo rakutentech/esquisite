@@ -18,13 +18,25 @@ The plugin automatically loads itself, unless the `data-no-autoload` attribute i
 
 ```html
 <!-- autoloads, injects CSS -->
-<script src="docsify-code-inline.js"></script>
+<script src="//unpkg.com/@rakutentech/docsify-code-inline/dist/index.min.js"></script>
 
 <!-- autoloads, doesn't inject CSS -->
-<script src="docsify-code-inline.js" data-no-css-inject></script>
+<script src="//unpkg.com/@rakutentech/docsify-code-inline/dist/index.min.js" data-no-css-inject></script>
 
 <!-- doesn't load, doesn't inject CSS -->
-<script src="docsify-code-inline.js" data-no-autoload data-no-css-inject></script>
+<script src="//unpkg.com/@rakutentech/docsify-code-inline/dist/index.min.js" data-no-autoload data-no-css-inject></script>
+```
+
+You can also import it as an ES module, if using the `.esm` build:
+
+```html
+<script type="module" src="//unpkg.com/@rakutentech/docsify-code-inline/dist/index.esm.min.js"></script>
+```
+
+The module also support Node. See the API below.
+
+```sh
+npm install --save-dev @rakutentech/docsify-code-inline
 ```
 
 ## Usage
@@ -66,6 +78,10 @@ highlighting using PrismJS like in code fences.
 ## Styling
 
 The plugin uses the styles defined by [`docsify-themeable`][docsify-themeable].
+
+## Typescript
+
+Types are included in the library.
 
 ## API
 
