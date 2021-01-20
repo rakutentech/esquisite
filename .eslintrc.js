@@ -1,4 +1,5 @@
 module.exports = {
+  root: true,
   extends: ['rollup', 'plugin:import/typescript'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
