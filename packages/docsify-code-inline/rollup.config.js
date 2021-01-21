@@ -9,14 +9,16 @@ export default {
   output: [
     {
       exports: 'auto',
+      name: 'docsifyCodeInline',
       file: 'dist/index.js',
-      format: 'cjs',
+      format: 'iife',
       sourcemap: true
     },
     {
       exports: 'auto',
+      name: 'docsifyCodeInline',
       file: 'dist/index.min.js',
-      format: 'cjs',
+      format: 'iife',
       plugins: [terser()],
       sourcemap: true
     },
