@@ -1,5 +1,14 @@
 # @rakutentech/docsify-code-inline ChangeLog
 
+## v1.0.5
+
+_2021-01-21_
+
+### Bugfixes
+
+- fix: changed format from cjs to iife (20705b9)
+- fix: add missing transformation result to readme (6916392)
+
 ## v1.0.4
 
 _2021-01-20_
